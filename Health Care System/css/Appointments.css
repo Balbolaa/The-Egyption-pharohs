@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table{
+    border-bottom: 1px solid  #C6C6C6;
+    height: 70px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+}
+.table>img{
+    width: 170px;
+    height: 40px;
+    padding: 20px 40px 20px 40px;
+}
+
+.sidebar {
+    height: 100vh; 
+    width: 170px; 
+    background-color: rgba(243, 243, 244, 1); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    margin-top: 72px;
+}
+.sidebar button {
+    color:rgba(2, 35, 44, 1);
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+}
+.sidebar i{
+    padding-right: 6px;
+}
+.sidebar button.dash{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(15, 76, 92, 1);
+    border-color: rgba(15, 76, 92, 1);
+    border-radius: 15px;
+}
+.book{
+    margin-left: 230px;
+    margin-top: 20px;
+    color: rgba(15, 76, 92, 1);
+    font-family: Montserrat, sans-serif;
+
+}
+.Upcoming{
+    margin-left: 230px;
+    margin-top: 40px;
+    color: rgba(223, 41, 53, 1);
+    font-family: Montserrat, sans-serif;
+}
+.btn{
+    margin-left: 230px;
+    margin-top: 10px;
+}
+.btn button{
+    color: rgba(223, 41, 53, 1);
+    width: 220px;
+    font-size: x-large;
+    height: 70px; 
+    background-color: rgba(243, 243, 244, 1);  
+    border-radius: 14px;
+    border:#C6C6C6 ;
+    cursor: pointer;
+}
+div.a{
+    border: 3px solid rgba(201, 210, 212, 1);
+    margin-left:15%;
+    margin-top: 20px;
+    width: 75%;
+    height: 110px;
+    border-radius: 24px;
+}
+div.a img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 2px;
+}
+div.a button{
+    font-size: x-large;
+    position: absolute;
+    left: 1230px;
+    top: 236px;
+    height: 70px;
+    width: 120px;
+    color: rgba(223, 41, 53, 1);
+    border: 2px solid rgba(223, 41, 53, 1);
+    
+    border-radius: 19px;
+    background-color: rgba(255, 255, 255, 1);
+cursor: pointer;
+}
+div.a button:hover{
+    background-color:rgba(223, 41, 53, 1) ;
+    color:rgba(255, 255, 255, 1) ;
+}
+
+div.b{
+    border: 3px solid rgba(201, 210, 212, 1);
+    margin-left:15%;
+    margin-top: 25px;
+    width: 75%;
+    height: 110px;
+    border-radius: 24px;
+}
+
+div.b img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+div.b button{
+    position: absolute;
+    right: 186px;
+    top: 377px;
+    font-size: x-large;
+    height: 70px;
+    width: 120px;
+    border-radius: 19px;
+    color: rgba(223, 41, 53, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(223, 41, 53, 1);
+    cursor: pointer;
+}
+div.b button:hover{
+    background-color:rgba(223, 41, 53, 1) ;
+    color:rgba(255, 255, 255, 1) ;
+}
+div.c{
+    border: 3px solid rgba(201, 210, 212, 1);
+    margin-left:15%;
+    margin-top: 25px;
+    width: 75%;
+    height: 110px;
+    border-radius: 24px;
+}
+div.c img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+div.c button{
+    font-size: larger;
+    position: absolute;
+    right: 186px;
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 19px;
+    color: rgba(15, 76, 92, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(15, 76, 92, 1);;
+    cursor: pointer;
+}
+div.c button:hover{
+    background-color:rgba(15, 76, 92, 1) ;
+    color: rgba(255, 255, 255, 1);
+
+}

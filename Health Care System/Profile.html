@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/Profile.css">
+</head>
+<body style="background-color: rgba(255, 255, 255, 1);">
+    <div class="table">
+        <img src="website photo/Screenshot 2024-11-10 105331.png" alt="">
+        <i style="position: absolute;top: 27px; font-size: 30px;  margin-left: 79%; color: rgba(65, 116, 129, 1);" class="fa fa-bell-o"></i>
+        <button style="position: absolute;top: 16px;font-size: 27px;margin-left: 82%; border-radius: 20px;width: 230px; color: rgba(65, 116, 129, 1); background-color: rgba(243, 243, 244, 1); border: rgba(243, 243, 244, 1) ;"> <i style="padding: 8px; color: rgba(0, 0, 0, 1);" class="fa fa-user"></i>Ravad Nadam</button>
+</div> 
+<div class="sidebar">
+    <a href="dash.html">   <button ><i class="fa fa-dashboard"></i>Dashboard</button>    </a>
+    <a href="Appointments.html">   <button><i class="fa fa-plus-square"></i>Appointments</button></a>
+    <a href="Messages.html">   <button ><i class="fa fa-envelope"></i>Messages</button>    </a>
+    <a href="">   <button class="dash"><i class="fa fa-user"></i>Profile </button></a>
+</div>
+<img class="ph" src="website photo/Screenshot 2024-11-17 184541.png" alt="">
+
+<div class="upload-container" id="uploadContainer">
+    <h3 style="position: absolute; left: 28px;top: 3px; color: rgba(6, 54, 67, 1); ">+</h3>
+    <i class="fa fa-camera" style="font-size: 24px ; color: rgba(6, 54, 67, 1); padding: 12px;position: absolute; top: 4px;" ></i>
+
+    <img id="uploadedImage" src="" alt="Uploaded Photo">
+    <input type="file" id="fileInput" accept="image/*">
+</div>
+
+<h1 style="margin-left: 727px; color: rgba(65, 116, 129, 1);margin-top: 25px;">Ravad Nadam <i style="font-size: 24px;" class="fa fa-pencil"></i></h1>
+<hr style="color: rgba(201, 210, 212, 1); margin: 20px 100px 0px 280px ;">
+<div class="q">
+<div class="form">
+    <label for="Email">Email:</label>
+    <input   id="Email" type="text" placeholder ="0rwad.nadam0@gmail.com">
+</div>
+<div class="pass">
+    <label for="">Password:</label>
+    <input type="password" placeholder="************">
+</div>
+</div>
+<hr style="color: rgba(201, 210, 212, 1); margin: 30px 100px 0px 280px ;">
+
+
+<div style="margin-left: 300px;" class="gender">
+    <h3 style="color: rgba(65, 116, 129, 1);  margin-left: 8px; margin-top: 10px;">Gender:</h3>
+        <input style="color: rgba(65, 116, 129, 1); margin-left: 20px;  " type="radio" id="male" name="gender" value="male">
+        <label style="color: rgba(65, 116, 129, 1); font-family: sans-serif;margin-left: 5px; margin-top: 10px;" for="male">Male</label>
+        <input style="color: rgba(65, 116, 129, 1); margin-left: 30px;" type="radio" id="female" name="gender" value="female">
+        <label style="color: rgba(65, 116, 129, 1);font-family: sans-serif; margin-left: 6px;margin-top: 10px;" for="female">Female</label>
+
+        <div class="data">
+            <label  for="">Birthday:</label>
+            <input   type="date" name="" id="">
+        </div>
+
+</div>
+<hr style="color: rgba(201, 210, 212, 1); margin: 10px 100px 0px 280px ;">
+<br>
+    <div style=" margin-left: 300px;margin-top: 30px;">
+        <label style=" font-size: large;font-family:sans-serif;color: rgba(65, 116, 129, 1);padding: 15px" for="">Medical records:</label>
+        <input style=" font-size: large;background-color: rgba(241, 241, 241, 1);border: rgba(241, 241, 241, 1);padding: 10px;width: 950px;color: rgba(15, 76, 92, 1);height: 55px;" type="text">
+    </div>
+    <hr style="color: rgba(201, 210, 212, 1); margin: 10px 100px 0px 280px ;">
+
+    <button class="btn">Logout</button>
+
+
+<script>
+    const uploadContainer = document.getElementById('uploadContainer');
+    const fileInput = document.getElementById('fileInput');
+    const uploadIcon = document.getElementById('uploadIcon');
+    const uploadedImage = document.getElementById('uploadedImage');
+
+    uploadContainer.addEventListener('click', () => {
+        fileInput.click(); // Trigger the file input
+    });
+
+    // Handle file input change
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                uploadedImage.src = e.target.result; // Set image source
+                uploadedImage.style.display = 'block'; // Show the image
+                uploadIcon.style.display = 'none'; // Hide the icon
+            };
+            reader.readAsDataURL(file); // Read the file as a data URL
+        }
+    });
+</script>
+</body>
+</html>

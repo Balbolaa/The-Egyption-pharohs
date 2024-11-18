@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table{
+    border-bottom: 1px solid  #C6C6C6;
+    height: 70px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+}
+.table>img{
+    width: 170px;
+    height: 40px;
+    padding: 20px 40px 20px 40px;
+}
+
+.sidebar {
+    height: 100vh; 
+    width: 170px; 
+    background-color: rgba(243, 243, 244, 1); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    margin-top: 72px;
+}
+.sidebar button {
+    color:rgba(2, 35, 44, 1);
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+}
+.sidebar i{
+    padding-right: 6px;
+}
+.sidebar button.dash{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(15, 76, 92, 1);
+    border-color: rgba(15, 76, 92, 1);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+.schedule-container {
+    margin-left: 250px;
+    width: 1200px;
+    height: 400px;
+}
+
+table.schedule {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* تنسيق الرأس */
+table.schedule thead th {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(48, 44, 54, 1);
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+/* خلايا الجدول */
+table.schedule tbody td {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #eee;
+    height: 50px;
+}
+
+/* عمود الوقت */
+table.schedule tbody td.time {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* الأحداث المميزة */
+table.schedule tbody td.highlight {
+    background-color: #cce4f7;
+    font-weight: bold;
+    color: #1b4b72;
+    border-left: 4px solid #559ed5;
+}

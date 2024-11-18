@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="background-container" style="    background-image: url(website\ photo/photo_5893222681401215418_y.jpg); background-size: cover;">
+    <div class="table">
+        <img src="website photo/Screenshot 2024-11-10 105331.png" alt="">
+       </div> 
+
+       <div class="container">
+
+        <div class="bord" >
+            <a  href="home.html"><button style="font-family: 'Montserrat', sans-serif;" class="btn"> <i style="margin: 0px 16px 0px 16px;" class="fas fa-angle-left"></i> Go Back</button></a>
+            <div class="box"><h1 style="color: #FFFFFF; margin-left: 30px; margin-top: 30px;">Did you know?</h1><br>
+                <p style="color: #FFFFFF; margin-left: 30px; margin-top: 5px;">You can delete existing appointments until 1 hour <br> before the appointment time  </p>
+                <br>
+                <br>
+                <br>
+                <div class="line ">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bord" id="form"> 
+            <h3 style="font-family:'Montserrat', sans-serif; color: #02232C; font-size: x-small ;margin-left: 15px; margin-top: 30px;   " >WELCOME BACK</h3>
+            <h3 style="font-family:'Montserrat', sans-serif; color: #02232C;margin-left: 15px; margin-top: 7px; ">Log In to your Account</h3>
+                  
+                  <div class="input-container">
+                    <label style="margin-top: 25px;" for="email">Email</label>
+                    <input style="margin-top: 30px;" class="q" type="email" id="email" name="email" required placeholder="0rwad.nadam0@gmail.com">
+                  </div>
+                  
+                  <div class="input-container">
+                    <input class="q" type="password" id="password" name="password" required placeholder="***************">
+                    <span class="toggle-icon" onclick="togglePassword()">
+                        <i class="fas fa-eye"></i> <!-- أيقونة العين لعرض كلمة المرور -->
+                    </span>
+                    <label for="password">Password</label>
+                  </div>
+                
+                  <div >
+                    <label style="margin-top: 25px; position: absolute;left: 1190px; top: 295px; color: rgba(0, 0, 0, 1);" for="email">Remember me</label>
+                    <input style="position: absolute; left: 1030px;" type="checkbox">
+                    <p style="position: absolute;left: 1365px; font-size: small; top: 320px; color: rgba(125, 122, 133, 1);">Forgot Password?</p>
+                  </div>
+                  <br>
+                  <br>
+                  <a href="dash.html"><button style="font-family:'Montserrat', sans-serif ;" class="b" type="button">GET STARTED</button></a>
+                  <p style="text-align: center; color: rgba(224, 224, 224, 1);">________________ <strong style="color: black;">or</strong>_______________</p>
+                  <div class="button-container">
+                    <a href="https://www.google.de/"><button style="height: 35px;background-color:rgba(238, 238, 238, 1);    color: rgba(144, 148, 160, 1);    border-radius: 7px; border: rgba(238, 238, 238, 1); width: 280px;  " class="google-btn"> <i class="fa fa-google"></i>   Sign Up with Google</button></a>
+                    <a href="https://de-de.facebook.com/login/?next=https%3A%2F%2Fde-de.facebook.com%2F"><button style="height: 32px;background-color: rgba(238, 238, 238, 1);    color: rgba(144, 148, 160, 1);border: rgba(238, 238, 238, 1);    border-radius: 7px; width: 280px; "  class="facebook-btn"> <i class="fa fa-facebook"></i>Sign Up with Face</button> </a>
+                    <a href="https://www.apple.com/"><button style="height: 35px;background-color: rgba(238, 238, 238, 1);    color: rgba(144, 148, 160, 1);border: rgba(238, 238, 238, 1);    border-radius: 7px; width: 280px; " class="apple-btn">  <i class="fa fa-apple"></i>Sign Up with Apple</button></a>
+                  </div>
+
+                  <h1 style="font-size: small; text-align: center; margin-top: 30px;">New User?<a style="color: black;" href="signup.html"><u>SIGN UP HERE</u></a> </h1>
+                  
+        </div>
+       </div>
+
+       <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const icon = document.querySelector(".toggle-icon i");
+    
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash"); // أيقونة العين المشطوبة لإخفاء كلمة المرور
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye"); // أيقونة العين لعرض كلمة المرور
+            }
+        }
+    </script>
+
+      
+      
+</body>
+</html>

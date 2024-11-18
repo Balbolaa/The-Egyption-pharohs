@@ -1,0 +1,168 @@
+.background-container{
+    background-image: url(Screenshot\ 2024-11-10\ 125636.png);
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.table{
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 70px;
+    background-color: rgba(255, 255, 255, 1);
+    left: 100px
+    
+
+
+}
+.table>img{
+    width: 170px;
+    height: 40px;
+    padding: 20px 40px 20px 40px;
+}
+
+button.btn{
+    font-size: x-large;
+    margin-top: 50px;
+    margin-left: 140px;
+    border-radius: 10px;
+    width: 190px;
+    height: 50px;
+    background-color: #Ffff;
+    border: #ffffff
+
+}
+.btn:hover{
+    background-color:hwb(122 30% 31% / 0.5); ;
+    transition: border-color 0.9s, box-shadow 0.6s; 
+}
+.box{
+    border: 5px solid #0F4C5C;
+    width: 472px;
+    height: 170px;
+    margin-left: 150px;
+    margin-top: 120px;
+    background-color: #0F4C5C;
+
+}
+.line{
+    display: flex;
+}
+.line1 {
+    width: 40px;  
+    height: 6px;  
+    background-color: #00494d; 
+}
+.line2, .line3 {
+    width: 30px;  
+    height: 3px; 
+    background-color: #a0a0a0; 
+    margin-left: 20px;
+}
+
+#form{
+    border: 1px solid rgba(250, 250, 250, 0.75) ;
+    height: 550px;
+    width: 400px;
+    background-color:#ffffff;
+    border-radius: 16px;
+    margin-top: 27px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.bord{
+    margin: 0px 300px 0px 220px;
+}
+.input-container {
+    position: relative;
+    gap: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    padding-left: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    width: 260px;
+    color: #7D7A85;
+    border-color: #7D7A85;
+    margin: 7px 17px 7px 17px;
+    height: 25px;
+  }
+  
+  label {
+    position: absolute;
+    top: -2px; 
+    left: 24px;
+    font-size: 14px;
+    color: #aaa;
+    background-color: #ffffff; 
+    padding: 0 5px;
+  }
+  .b{
+    width: 280px;
+    height: 40px;
+    margin: 7px 17px 7px 17px;
+    background-color: rgba(15, 76, 92, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 7px;
+    border: rgba(15, 76, 92, 1);
+
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 280px;
+    margin: 7px 17px 7px 17px;
+     
+    
+}
+
+.fa-facebook {
+    background: rgba(3, 155, 229, 1);
+    color: white;
+    font-size: x-large;
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+  .fa-apple{
+    color: rgba(2, 35, 44, 1);
+    font-size: x-large;
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+  }
+
+  .fa-google{
+    color: rgba(255, 61, 0, 1);
+    font-size: x-large;
+    margin-right: 40px;
+  }
+
+  
+
+
+.toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(125, 122, 133, 1);
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+input.r{
+    position: absolute;
+    right: 210px;
+}
+
+
+
